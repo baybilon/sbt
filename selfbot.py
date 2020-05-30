@@ -121,7 +121,7 @@ def sendOpera(to, profile):
   },
   "action": {
     "type": "uri",
-    "uri": "https://www.jurustupai.com/2020/05/cara-membuat-simple-selfbot-template.html?m=1" #jangan di hapus
+    "uri": "https://www.pornhub.com" #jangan di hapus
   }
   }
     opera2 = {
@@ -167,7 +167,7 @@ def sendOpera(to, profile):
   },
   "action": {
     "type": "uri",
-    "uri": "https://www.jurustupai.com/2020/05/cara-membuat-simple-selfbot-template.html?m=1" #jangandihapus
+    "uri": "https://www.pornhub.com" #jangandihapus
   }
 }
 
@@ -214,7 +214,7 @@ def sendOpera(to, profile):
   },
   "action": {
     "type": "uri",
-    "uri": "https://www.jurustupai.com/2020/05/cara-membuat-simple-selfbot-template.html?m=1"#jangandihapus
+    "uri": "https://www.pornhub.com"#jangandihapus
   }
 }
     opera = [opera1,opera2,opera3]
