@@ -10,7 +10,7 @@ import time, random, sys, json, codecs, threading, glob, re, string, os, request
 with open('token.json', 'r') as fp:
     connecting = json.load(fp)
 if connecting['token'] == "":
-     client = LINE("baybilon_iqbal@hotmail.com","091007018h67mae45")
+     client = LINE("baybilon_iqbal@hotmail.com","09100708l1742se")
 else:
     client=LINE(authToken=connecting['token'])
 with open('cctv.json', 'r') as fp:
@@ -259,7 +259,7 @@ def clientBot(op):
                 if op.param1 in cctv['Point']:   
                     if op.param2 not in cctv['Point3'][op.param1]:
                        try:uprofile = "https://obs.line-scdn.net/" + client.getContact(op.param2).pictureStatus
-                       except:uprofile = "https://i.imgur.com/w7vX2qU.jpg"
+                       except:uprofile = "https://imagizer.imageshack.com/v2/377x338q90/922/Z9ocJr.jpg"
                        Minum = client.getContact(op.param2).displayName
                        reading = {"type": "flex","altText": "Kesayangan membaca obrolan.","contents":{"type": "carousel","contents": [{"type": "bubble","size": "nano","body": {"type": "box","layout": "vertical","contents": [{"type": "image","url": uprofile,"size": "full","aspectMode": "cover","aspectRatio": "2:2.70","gravity": "top"},{"type": "box","layout": "vertical","contents": [{"type": "box","layout": "vertical","contents": [{"type": "text","text": "• " + Minum,"size": "xs","color": "#ffffff","weight": "bold","offsetBottom": "2px","offsetTop": "1px","offsetStart": "-1px","wrap": False,"align": "start"}],"position": "relative"},{"type": "text","text": "Hello,","size": "xs","weight": "bold","maxLines": 20,"align": "start","position": "absolute","offsetTop": "0px","offsetBottom":"-5px","gravity": "top","offsetStart": "3px","color": "#F10202"}],"position": "absolute","offsetBottom": "0px","offsetStart": "0px","offsetEnd": "0px","paddingAll": "16px","paddingTop": "12px","backgroundColor": "#000000"},{"type": "box","layout": "vertical","contents": [{"type": "text","text": "Reader","color": "#ffffff","align": "center","size": "xxs","offsetTop": "0px"}],"position": "absolute","cornerRadius": "20px","offsetTop": "8px","backgroundColor": "#ff334b","offsetStart": "7px","height": "15px","width": "40px"}],"paddingAll": "0px","offsetTop": "0px","offsetBottom": "20px","position": "relative"}}]}}
                        client.sendTemp(op.param1,reading)
@@ -397,7 +397,7 @@ def clientBot(op):
                         if ang.lower() == "me":
                             if msg.toType == 2:
                                 haha = client.getContact(msg._from)
-                                datax = {"type": "flex","altText": "G-Opera mengirim foto.","contents": {"type": "bubble","header": {"type": "box","layout": "vertical","contents": [{"type": "box","layout": "horizontal","contents": [{"type": "image","url":"https://obs.line-scdn.net/" + "{}".format(client.getContact(msg._from).pictureStatus),"size": "full","aspectMode": "cover","aspectRatio": "60:50","gravity": "center","flex": 1},{"type": "box","layout": "horizontal","contents": [{"type": "text","text": "Image","size": "xs","color": "#ffffff","align": "center","gravity": "center"}],"backgroundColor": "#EC3D44","paddingAll": "2px","paddingStart": "4px","paddingEnd": "4px","flex": 0,"position": "absolute","offsetStart": "18px","offsetTop": "18px","cornerRadius": "100px","width": "48px","height": "25px"}]}],"paddingAll": "0px"},"body": {"type": "box","layout": "vertical","contents": [{"type": "box","layout": "vertical","contents": [{"type": "box","layout": "vertical","contents": [{"type": "image","url": "https://i.imgur.com/w7vX2qU.jpg","size": "full","aspectMode": "cover","aspectRatio": "80:25","gravity": "center","flex": 1}]}],"paddingAll": "13px","backgroundColor": "#000000","cornerRadius": "2px","margin": "xl"}],"paddingAll": "10px","backgroundColor": "#000000"}},}
+                                datax = {"type": "flex","altText": "G-Opera mengirim foto.","contents": {"type": "bubble","header": {"type": "box","layout": "vertical","contents": [{"type": "box","layout": "horizontal","contents": [{"type": "image","url":"https://obs.line-scdn.net/" + "{}".format(client.getContact(msg._from).pictureStatus),"size": "full","aspectMode": "cover","aspectRatio": "60:50","gravity": "center","flex": 1},{"type": "box","layout": "horizontal","contents": [{"type": "text","text": "Image","size": "xs","color": "#ffffff","align": "center","gravity": "center"}],"backgroundColor": "#EC3D44","paddingAll": "2px","paddingStart": "4px","paddingEnd": "4px","flex": 0,"position": "absolute","offsetStart": "18px","offsetTop": "18px","cornerRadius": "100px","width": "48px","height": "25px"}]}],"paddingAll": "0px"},"body": {"type": "box","layout": "vertical","contents": [{"type": "box","layout": "vertical","contents": [{"type": "box","layout": "vertical","contents": [{"type": "image","url": "https://imagizer.imageshack.com/v2/280x200q90/923/H1uMrZ.png","size": "full","aspectMode": "cover","aspectRatio": "80:25","gravity": "center","flex": 1}]}],"paddingAll": "13px","backgroundColor": "#000000","cornerRadius": "2px","margin": "xl"}],"paddingAll": "10px","backgroundColor": "#000000"}},}
                                 client.sendTemp(msg.to,datax)
                         if ang.lower() == ".geturl":
                             if msg.toType == 2:
