@@ -218,7 +218,7 @@ def sendOpera(to, profile):
   }
 }
     opera = [opera1,opera2,opera3]
-    senorita = {"type": "flex","altText": "The G - Operation","contents": {"type": "carousel","contents": opera}}
+    senorita = {"type": "flex","altText": "Bot Tolol","contents": {"type": "carousel","contents": opera}}
     client.sendTemp(to,senorita)
 
 def sendMention(to, text="", mids=[]):
@@ -462,7 +462,7 @@ def clientBot(op):
                             client.sendReplyMessage(msg.id,msg.to, "ID Grup : \n" + gid.id + "\n\nGroup name: \n" + str(gid.name))
 
                         if ang.lower() == ".panduan" or ang.lower() == "panduan":
-                           data = {"type": "flex","altText": "The G - Operation","contents": {"type": "bubble","styles": {"body": {"backgroundColor": "#000000"}},"body": {"type": "box","layout": "vertical","spacing": "lg","contents": [{"type": "image","url": "https://imagizer.imageshack.com/img922/9913/pz3ZBp.png","size": "xxl","aspectRatio": "6.50:2","aspectMode": "cover","action": {"type": "uri","uri": "http://line.me/ti/p/~@kmj4856d"}},{"type": "box","layout": "horizontal","spacing": "xl","contents": [{"type": "image","url":"https://lh3.googleusercontent.com/avr-Ht9lKzM9RdG0fr3Ev4cacXfUhHzKqSb3XHyqSQVrYhtMhyH__pZN6HuXu-9Zbdw","size": "full","aspectRatio": "1:1","aspectMode": "cover","action": {"type": "uri","uri":"line://home/public/profile?id=kmj4856d"}},{"type": "box","layout": "vertical","spacing": "sm","contents": [{"type": "text","text": "Panduan","size": "lg","weight": "bold","color": "#D32608","wrap": True},{"type": "text","text": "Cara menggunakan perintah pada simple selfbot G-Operation.\nKlik tombol READ.","size": "sm","color": "#ffffff","wrap": True},{"type": "button","style": "primary","color":"#800000","action": {"type": "uri","label": "READ","uri": "https://www.jurustupai.com/2020/05/panduan-menggunakan-perintah-pada.html?m=1"}}]}]}]}}}
+                           data = {"type": "flex","altText": "Bot Tolol","contents": {"type": "bubble","styles": {"body": {"backgroundColor": "#000000"}},"body": {"type": "box","layout": "vertical","spacing": "lg","contents": [{"type": "image","url": "https://imagizer.imageshack.com/img922/9913/pz3ZBp.png","size": "xxl","aspectRatio": "6.50:2","aspectMode": "cover","action": {"type": "uri","uri": "http://line.me/ti/p/~@kmj4856d"}},{"type": "box","layout": "horizontal","spacing": "xl","contents": [{"type": "image","url":"https://lh3.googleusercontent.com/avr-Ht9lKzM9RdG0fr3Ev4cacXfUhHzKqSb3XHyqSQVrYhtMhyH__pZN6HuXu-9Zbdw","size": "full","aspectRatio": "1:1","aspectMode": "cover","action": {"type": "uri","uri":"line://home/public/profile?id=kmj4856d"}},{"type": "box","layout": "vertical","spacing": "sm","contents": [{"type": "text","text": "Panduan","size": "lg","weight": "bold","color": "#D32608","wrap": True},{"type": "text","text": "Cara menggunakan perintah pada simple selfbot G-Operation.\nKlik tombol READ.","size": "sm","color": "#ffffff","wrap": True},{"type": "button","style": "primary","color":"#800000","action": {"type": "uri","label": "READ","uri": "https://www.jurustupai.com/2020/05/panduan-menggunakan-perintah-pada.html?m=1"}}]}]}]}}}
                            client.sendTemp(msg.to,data)
 
                         if ang.lower() == ".groupict":
@@ -503,7 +503,7 @@ def clientBot(op):
                                       radmin += "\n%i. Unknown" % num
                                       num = (num+1)
                                try:
-                                  client.sendReplyMessage(msg.id, msg.to, "The G-Operation\n• Adminlist:\n" + radmin + "\n\nTotal: " + str(len(hoax)) + " Users.")
+                                  client.sendReplyMessage(msg.id, msg.to, "Bot Tolol\n• Adminlist:\n" + radmin + "\n\nTotal: " + str(len(hoax)) + " Users.")
                                except Exception as e:
                                   client.sendReplyMessage(msg.id, msg.to,"{}".format(str(e)))
 
@@ -555,7 +555,7 @@ def clientBot(op):
                                         if '&list=' not in a['href']:
                                            dl=("https://www.youtube.com" + a['href'])
                                            splitin = dl.split("?v=")[1]
-                                           data = {"type": "flex","altText": "The G - Operation","contents": {"type": "bubble","styles": {"body": {"backgroundColor": "#000000"}},"body": {"type": "box","layout": "vertical","spacing": "lg","contents": [{"type": "image","url": "https://imagizer.imageshack.com/img922/9913/pz3ZBp.png","size": "xxl","aspectRatio": "5.50:2","aspectMode": "cover","action": {"type": "uri","uri": "http://line.me/ti/p/~@kmj4856d"}},{"type": "box","layout": "horizontal","spacing": "xl","contents": [{"type": "image","url": "https://i.ytimg.com/vi/{}/maxresdefault.jpg".format(splitin),"size": "full","aspectRatio": "1:1","aspectMode": "cover","action": {"type": "uri","uri":"line://home/public/profile?id=kmj4856d"}},{"type": "box","layout": "vertical","spacing": "sm","contents": [{"type": "text","text": "Youtube","size": "lg","weight": "bold","color": "#800000","wrap": True},{"type": "text","text": "{}".format(a['title']),"size": "sm","color": "#ffffff","wrap": True},{"type": "button","style": "primary","color": "#800000","action": {"type": "uri","label": "OPEN","uri": "https://www.youtube.com"+a['href']}}]}]}]}}}
+                                           data = {"type": "flex","altText": "Bot Tolol","contents": {"type": "bubble","styles": {"body": {"backgroundColor": "#000000"}},"body": {"type": "box","layout": "vertical","spacing": "lg","contents": [{"type": "image","url": "https://imagizer.imageshack.com/img922/9913/pz3ZBp.png","size": "xxl","aspectRatio": "5.50:2","aspectMode": "cover","action": {"type": "uri","uri": "http://line.me/ti/p/~@kmj4856d"}},{"type": "box","layout": "horizontal","spacing": "xl","contents": [{"type": "image","url": "https://i.ytimg.com/vi/{}/maxresdefault.jpg".format(splitin),"size": "full","aspectRatio": "1:1","aspectMode": "cover","action": {"type": "uri","uri":"line://home/public/profile?id=kmj4856d"}},{"type": "box","layout": "vertical","spacing": "sm","contents": [{"type": "text","text": "Youtube","size": "lg","weight": "bold","color": "#800000","wrap": True},{"type": "text","text": "{}".format(a['title']),"size": "sm","color": "#ffffff","wrap": True},{"type": "button","style": "primary","color": "#800000","action": {"type": "uri","label": "OPEN","uri": "https://www.youtube.com"+a['href']}}]}]}]}}}
                                            client.sendTemp(msg.to,data)
                                            break
                             except Exception as e:client.sendReplyMessage(msg.id, msg.to,"{}".format(str(e)))
