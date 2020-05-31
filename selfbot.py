@@ -908,7 +908,7 @@ def clientBot(op):
                             midSelect = len(midMembers)//20
                             for mentionMembers in range(midSelect+1):
                                 no = 0
-                                ret_ = "「 Mention Group 」\n• G-Operation\n• Simple SB\n"
+                                ret_ = "「 Mention Group 」\n• Bot Tolol\n• Simple SB\n"
                                 dataMid = []
                                 for dataMention in group.members[mentionMembers*20 : (mentionMembers+1)*20]:
                                     dataMid.append(dataMention.mid)
