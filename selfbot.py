@@ -347,7 +347,7 @@ def clientBot(op):
                            tolol = "Gunakan awalan「. 」\nContoh .help"
                            goblok = "Gunakan awalan「. 」\nContoh .help\nJika bot tidak respon,\nsilahkan ketik '.allowliff'"
                            try:
-                              data = {"type": "flex","altText": "G-OPERA SELFBOT","contents": {"styles": {"body": {"backgroundColor": "#D34C09"}},"type": "bubble","body": {"contents": [{"contents": [{"contents": [{"text": "{}".format(goblok) ,"size": "md","margin": "none","color": "#FFFFFF","wrap": True,"weight": "regular","type": "text"}],"type": "box","layout": "baseline"}],"type": "box","layout": "vertical"}],"type": "box","spacing": "md","layout": "vertical"}}}
+                              data = {"type": "flex","altText": "Bot Tolol","contents": {"styles": {"body": {"backgroundColor": "#D34C09"}},"type": "bubble","body": {"contents": [{"contents": [{"contents": [{"text": "{}".format(goblok) ,"size": "md","margin": "none","color": "#FFFFFF","wrap": True,"weight": "regular","type": "text"}],"type": "box","layout": "baseline"}],"type": "box","layout": "vertical"}],"type": "box","spacing": "md","layout": "vertical"}}}
                            except:
                               client.sendReply(msg.id,msg.to,"{}".format(tolol))
                         if ang.lower() == ".me":                          
