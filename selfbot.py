@@ -10,7 +10,7 @@ import time, random, sys, json, codecs, threading, glob, re, string, os, request
 with open('token.json', 'r') as fp:
     connecting = json.load(fp)
 if connecting['token'] == "":
-     client = LINE("hanskimmer43@gmail.com","ihateababil88")
+     client = LINE("mail","pass")
 else:
     client=LINE(authToken=connecting['token'])
 with open('cctv.json', 'r') as fp:
